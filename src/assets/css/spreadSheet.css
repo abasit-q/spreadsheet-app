@@ -1,0 +1,113 @@
+
+.spreadsheet-wrapper{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 55px;
+    position: relative;
+}
+.sign-out{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+.sign-out:hover{
+    background-color: #7287913b;
+    transition: 0.2s;
+}
+.grid-wrapper{
+    position: relative;
+}
+.grid-wrapper .add-col,
+.grid-wrapper .add-row{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.2s;
+}
+.grid-wrapper .add-col:hover,
+.grid-wrapper .add-row:hover{
+    background-color: #7287913b;
+    opacity: 1;
+    transition: 0.2s;
+}
+.grid-wrapper .add-col{
+    top: 0;
+    right: -25px;
+}
+.grid-wrapper .add-row{
+    left: 0;
+    bottom: -25px;
+}
+.spreadsheet{
+    border-collapse: collapse;
+}
+.spreadsheet thead{
+    background-color: #728791;
+}
+.spreadsheet thead tr td{
+    color: #fff;
+    border-right: 1px solid #fff;
+}
+.spreadsheet thead tr td .col-caption{
+    margin-right: 10px;
+}
+.spreadsheet tr td:last-child{
+    border-right: none;
+}
+.spreadsheet tr td .col-actions{
+    float: right;
+}
+.spreadsheet tr td .row-actions{
+    margin-right: 5px;
+}
+.spreadsheet tr td .col-actions .fa,
+.spreadsheet tr td .row-actions .fa{
+    font-size: 15px;
+    cursor: pointer;
+    opacity: 0.3;
+    transition: 0.2s;
+}
+.spreadsheet tr td .col-actions .fa:hover,
+.spreadsheet tr td .row-actions .fa:hover{
+    opacity: 1;
+    transition: 0.2s;
+}
+.spreadsheet tr td .col-actions .fa:first-child{
+    margin-right: 5px;
+}
+.spreadsheet tbody{
+    background-color: #fff;
+}
+.spreadsheet tbody tr:nth-child(even){
+    background-color: #7287913b;
+}
+.spreadsheet tbody tr td{
+    border-right: 1px solid #728791;
+}
+.spreadsheet tbody tr td:last-child{
+    border-right: none;
+}
+.spreadsheet tr td{
+    padding: 10px;
+    height: 45px;
+    min-width: 100px;
+}
+.spreadsheet tr td input,
+.spreadsheet tr td select{
+    border: none;
+    background: none;
+}

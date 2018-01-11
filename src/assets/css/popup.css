@@ -1,0 +1,88 @@
+.popup-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000059;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup-wrapper .popup-content{
+    width: 33%;
+    height: auto;
+    background-color: #fff;
+}
+.popup-content .popup-header{
+    padding: 10px;
+    background-color: #728791;
+}
+.popup-content .popup-header .close-popup{
+    float: right;
+    cursor: pointer;
+}
+.popup-content .popup-header .close-popup .fa{
+    color: #fff;
+}
+.popup-content .popup-header input{
+    background: transparent;
+    font-size: 16px;
+    color: #fff;
+}
+.popup-content .popup-body{
+    padding: 10px;
+}
+.popup-content .popup-body label{
+    font-size: 13px;
+}
+.popup-content .type-selector select{
+    width: 75%;
+    padding: 3px;
+}
+.popup-content .type-options{
+    padding: 10px 0;
+}
+.popup-content .type-options input{
+    width: 75%;
+    border-bottom: 1px solid #728791;
+    padding: 3px 0;
+}
+.popup-content .type-options input:focus{
+    border-bottom: 1px solid #728791!important;
+    outline: inherit;
+}
+.popup-content .type-options .options{
+    padding: 10px 0;
+}
+.popup-content .type-options .options .single-option{
+    padding: 3px 5px;
+    border: 1px solid #728791;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-right: 5px;
+    cursor: not-allowed;
+}
+.popup-content .type-options .options .single-option .delete-option{
+    cursor: pointer;
+}
+.popup-content .type-options .sum-options .sum-option{
+    padding: 3px 5px;
+    border: 1px solid #728791;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.popup-content .popup-footer{
+    background-color: #ebeeef;
+    padding: 10px;
+    text-align: right;
+}
+.popup-content button{
+    padding: 4px 12px;
+    background-color: #728791;
+    color: #fff;
+}
+.no-events{
+    pointer-events: none;
+}
